@@ -1,0 +1,68 @@
+{{!< default}}
+
+{{!-- The tag above means: insert everything in this file
+into the {body} tag of the default.hbs template --}}
+
+{{> 'content-banner' parth_url=(asset "images/about_us.svg") description=(t "about_us_des") title=(t "join_us")}}
+
+<div class="inner">
+
+{{!--Search--}}
+
+
+<div class="inner">
+   <h6 class="center">加入我们</h6>
+   <h4 class="center">加入我们</h4>
+    {{> search}}
+</div>
+
+{{!--article list--}}
+
+{{#get "tags" limit="all" include="count.posts"}}
+        
+        <ul class="article-list-hearder flex-box-center">
+            {{#foreach tags}}
+                <li>{{name}}</li>
+            {{/foreach}}  
+        </ul>
+        <div class="flex-box-col">
+            {{#foreach tags}}
+                <div class="article-list">
+                        <h4>
+                            {{name}}
+                            {{!-- <div class="topic-count">
+                                {{plural count.posts empty="No articles" singular="1 article" plural="% articles"}}
+                            </div> --}}
+                        </h4>
+                        {{!-- <a class="topic-more button-arrow button-arrow-right" href="{{url}}">View All</a> --}}
+                        <ul>
+                            {{#get "posts" order="published_at asc" filter="tag:{{slug}}" limit="5" as |featured|}}
+                                <ul class="card4 flex-box-between">
+                                    {{#foreach featured}}
+                                        <li>
+                                            <p class="detail">{{title}}</p>
+                                        </li>
+                                    {{/foreach}}
+                                </ul>
+                            {{/get}}
+                        </ul>
+                </div>
+            {{/foreach}}      
+        </div>
+{{/get}}
+</div>
+
+<div class="inner form-contact">
+    <h6 class="center">联系我们</h6>
+    <h3 class="center space-t-b">联系我们</h3>
+    <div class="center">
+        <div>
+            <input class="form-input" placeholder="E-mail address"/>
+            <select class="form-input">类别</select>
+        </div>
+        <div class="space-t-b">
+            <textarea class="form-text">在这里留言吧…</textarea>
+        </div>
+        <p><button class="button-defalut">发送邮件</button></p>
+    </div>
+</div>

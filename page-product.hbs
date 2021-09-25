@@ -1,0 +1,116 @@
+{{!< default}}
+
+{{#post}}
+{{> 'content-banner' parth_url=(asset "images/about_pro.svg")}}
+
+{{!-- HashData Warehouse --}}
+<div class="flex-box-center inner">
+    <div class="block_img">
+        <img src="{{asset "images/wearhouse@2x.png"}}">
+    </div>
+    <div class='block_intro'>
+        {{content}}
+    </div>
+</div>
+{{/post}}
+
+{{!-- 产品介绍 --}}
+<div class="outer product-intro">
+    <div class="inner">
+        <h6>产品介绍</h6>
+        <h3>产品介绍</h3>
+        {{#get "tags" order="published_at asc" filter="name:['产品']"}}
+             {{#foreach tags}}
+                <p class="detail">{{description}}</p>
+             {{/foreach}}
+        {{/get}}
+        <ul class="flex-box-between">
+            <li class="card3">
+                <a href="/warehouse/">
+                <h4>数据仓库</h4>
+                <p class=
+                "detail2">国内自主研发的大规模……</p>
+                </a>
+            </li>
+            <li class="card3">
+                <a href="/datalake/">
+                    <h4>数据湖</h4>
+                    <p class="detail2">HashData云端数据湖……</p>
+                </a>
+            </li>
+            <li class="card3">
+                <a href="/datashare/">
+                <h4>数据共享</h4>
+                <p class="detail2">不同集群之间的数据共享……</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+</div>
+
+
+
+{{!-- 产品功能 --}}
+<div class="inner product-card">
+    <h6>产品功能</h6>
+    <h3>产品功能</h3>
+    <ul class="flex-box-between card2">
+            {{#get "posts" order="published_at desc" filter="tag:['function']" limit=6}}
+            {{#foreach posts}}
+                 <li class="shandow-box-1">
+                    {{> 'icon-box' parth_url= (img_url feature_image)}}
+                    <h5>{{title}}</h5>
+                    <p class="detail m_b">{{excerpt}}</p>
+                    <a class="more" href="{{url}}">read more...</a>
+                </li>
+            {{/foreach}}
+            {{/get}}
+    </ul>
+    </div>
+
+
+{{!-- 客户案例 --}}
+<div class="inner customer-recognition">
+    <h6 class="blue_font center">客户案例</h6>
+    <h4 class="center">客户案例</h4>
+    <ul class="flex-box">
+        <ul class="flex-box">
+        {{#get "posts" order="published_at asc" filter="tag:['case']"}}
+            {{#foreach posts}}
+                    <li>
+                        <div class="coustom_show flex-col">
+                            
+                            {{#if feature_image}}
+                                <img  src="{{img_url feature_image}}">
+                            {{else}}
+                                <img  src="{{img_url feature_image}}">
+                            {{/if}}
+                            <span class="date">{{date format="DD MMMM YYYY"}}</span>
+                            <span class="title">{{title}}</span>
+                        </div>
+                        <div class="coustom_comment flex-col">
+                            <span class="author">{{authors}}</span>
+                            <span class="date">{{date format="DD MMMM YYYY"}}</span>
+                            <span class="ellipsis">{{excerpt}}</span>
+                            <p class="space-t"><a href="{{url}}">{{> icons/link-arrow}}</a></p>
+                        </div>
+
+                    </li>
+            {{/foreach}}
+        {{/get}}
+    </ul>
+    </ul>
+</div>        
+
+{{!-- 客户 logo --}}
+    <div class="outer customer-brand">
+        <div class="inner">
+            <img src="{{asset "images/brands/ap.png"}}">
+            <img src="{{asset "images/brands/hb.png"}}">
+            <img src="{{asset "images/brands/sy.png"}}">
+            <img src="{{asset "images/brands/mobile.png"}}">
+            <img src="{{asset "images/brands/veolia.png"}}">
+
+        </div>
+    </div>

@@ -1,0 +1,219 @@
+{{!-- {{!< default}} --}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+{{!-- The main content area --}}
+{{#contentFor "scripts"}}
+{{/contentFor}}
+
+
+<main id="site-main" class="site-main outer">
+    {{!-- header 下面大广告位 --}}
+    {{> 'content-banner' parth_url=(asset "images/banner1.svg") description=(t "hashdata_description") title=(t "sql_on_cloud")}}
+    {{!-- 客户 logo --}}
+    <div class="outer customer-brand">
+        <div class="inner">
+            <img src="{{asset "images/brands/ap.png"}}">
+            <img src="{{asset "images/brands/hb.png"}}">
+            <img src="{{asset "images/brands/sy.png"}}">
+            <img src="{{asset "images/brands/mobile.png"}}">
+            <img src="{{asset "images/brands/veolia.png"}}">
+
+        </div>
+    </div>
+    {{!-- 业务介绍 --}}
+    <div class="inner business-introduction">
+        <h6 class="center">让大数据分析民主化</h6>
+        <h4 class="center">
+            企业级云数据平台
+        </h4>
+
+        <ul class="flex-box">
+            {{#get "posts" order="published_at asc" filter="tag:['function']" limit=4}}
+            {{#foreach posts}}
+                <li>
+                    {{> 'icon-box' parth_url= (img_url feature_image)}}
+                    <h5>{{title}}</h5>
+                    <p class="detail m_b">{{excerpt}}</p>
+                    <a class="more" href="{{url}}">read more...</a>
+                </li>
+            {{/foreach}}
+            {{/get}}
+
+        </ul>
+    </div>
+
+{{!-- HashData Warehouse --}}
+<div class="flex-box-center inner">
+    <div class="block_img">
+        <img src="{{asset "images/wearhouse@2x.png"}}">
+    </div>
+    <div class='block_intro'>
+        <h6>HashData</h6>
+        <h4>HashData Warehouse</h4>
+        <p class="detail2">HashData数据仓库是一个高性能、完全托管的PB级数据仓库服务，让企业用户能够更轻松地分析海量数据。通过使用HashData，企业用户无需购买、配置和管理庞大的服务器集群，按使用量付费，没有任何前期投入，使得数据存储和分析的成本不到传统解决方案的十分之一。</p>
+        <p class="detail2">另外，HashData数据仓库兼容标准的JDBC和ODBC，无缝集成企业内部已有的ETL和BI工具。这意味着HashData数据仓库使用起来跟部署在企业内部数据中心的传统数据仓库一样自然方便。</p>
+        <h3> —— 酷克数据酷克数据，酷克数据</h3>
+    </div>
+</div>
+
+
+{{!-- 服务 --}}
+<div class="service inner">
+    <h6>我们的服务</h6>
+    <h3>客户服务</h3>
+    <ul class="flex-box-center">
+        <li>
+            <span class="font-blue-b">12k+</span><span>所有客户</span>
+        </li>
+        <li>
+            <span class="font-blue-b">180+</span><span>完成项目</span>
+        </li>
+        <li>
+            <span class="font-blue-b">300+</span><span>专业团队</span>
+        </li>
+    </ul>
+    <div class="flex-box shandow-box">
+        <p>
+            <span class="font-1">需要服务？</span>
+            <span>HashData团队期待你的到来</span>
+        </p>
+         <div class="button-defalut">
+            <a>联系我们</a>
+        </div>
+    </div>
+</div>
+
+{{!-- 我们的成就 --}}
+
+<div class="inner anli">
+<h6 class="blue_font">我们的成就</h6><h4>行业案例</h4>
+<P><button class="button-2">查看其它案例</button></P>
+    
+    <ul class="flex-box">
+        {{#get "tags" order="published_at asc" filter="name:['交通行业','能源行业','金融行业','互联网行业','通信行业']"}}
+            {{#foreach tags}}
+                <li>
+                    <img src="{{img_url feature_image}}">
+                </li>
+            {{/foreach}}
+        {{/get}}
+    </ul>
+
+</div>
+
+
+{{!-- 推荐购买 --}}
+
+<div class="inner recommended-purchase">
+    <h6 class="blue_font center">推荐购买</h6>
+    <h4 class="center">
+           推荐购买
+    </h4>
+    <div class="flex-box">
+        <div class="flex-col product-box">
+            <div class="flex-col">
+                <p class="font-blue-b">
+                <span>云服务器</span>
+                <span class="sub-title">产品线首单</span>
+                </p>
+                <p class="txt8">
+                适用于个人网站，中小型web应用，测试业务，手机应用等场景
+                </p>
+                <span>配置：2核4G</span>
+                <span>宽带：5M</span>
+                <span>可用区：北京/上海/广州</span>
+                <div class="pricie">
+                <span class="price_num">¥120</span>
+                <span class="Pricie_unit">/年</span>
+                </div>
+                <button class="button-defalut">点击购买</button>
+            </div>
+        </div>
+        <div class="flex-col product-box">
+            <div class="flex-col">
+                <p class="font-blue-b">
+                <span>云服务器</span>
+                <span class="sub-title">产品线首单</span>
+                </p>
+                <p class="txt8">
+                适用于个人网站，中小型web应用，测试业务，手机应用等场景
+                </p>
+                <span>配置：2核4G</span>
+                <span>宽带：5M</span>
+                <span>可用区：北京/上海/广州</span>
+                <div class="pricie">
+                <span class="price_num">¥120</span>
+                <span class="Pricie_unit">/年</span>
+                </div>
+                <button class="button-defalut">点击购买</button>
+            </div>
+        </div>
+        <div class="flex-col product-box">
+            <div class="flex-col">
+                <p class="font-blue-b">
+                <span>云服务器</span>
+                <span class="sub-title">产品线首单</span>
+                </p>
+                <p class="txt8">
+                适用于个人网站，中小型web应用，测试业务，手机应用等场景
+                </p>
+                <span>配置：2核4G</span>
+                <span>宽带：5M</span>
+                <span>可用区：北京/上海/广州</span>
+                <div class="pricie">
+                <span class="price_num">¥120</span>
+                <span class="Pricie_unit">/年</span>
+                </div>
+                <button class="button-defalut">点击购买</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{!-- 寄语 --}}
+<div class="post-message outer">
+    <p class="inner">
+    像用水、用电之于个人一样，我们希望将大数据分析的成本降低到所有规模的企业，而不仅仅是大企业，都用得起，并且是按需付费，没有任何的前期投入。 “加载数据，分析数据，挖掘价值，其他一切交给我们。”我们希望用户将精力放到改善他们的业务上面，而不是去操心纷繁复杂、极易出错的大数据系统实施和运维。 同时，我们希望我们的解决方案提供足够的弹性，让用户能够根据业务负载变化随时调配数据分析所需的资源，而不用为提前规划计算存储资源而绞尽脑汁。
+    </p>
+    <div class="p_circle size_1" style="top: 3.3rem; left: 18.25rem;"></div>
+    <div class="p_circle size_2" style="bottom: 8rem; left: 7.25rem;"></div>
+    <div class="p_circle size_2" style="bottom: 4rem; left: 39.58rem;"></div>
+    <div class="p_circle size_3" style="bottom: 7rem; left:40%;"></div>
+    <div class="p_circle size_1" style="bottom: 6rem; right: 33rem;"></div>
+    <div class="p_circle size_1" style="top: 2rem; right: 9rem;"></div>
+    <div class="p_circle size_1" style="bottom: 2rem; right: 7rem;"></div>
+</div>
+
+{{!-- 咨询中心 --}}
+<div class="inner customer-recognition">
+    <h6 class="blue_font center">咨询中心</h6>
+    <h4 class="center">客户认可</h4>
+     <ul class="flex-box">
+        {{#get "posts" order="published_at asc" filter="tag:['customer-recognition']"}}
+            {{#foreach posts}}
+                    <li>
+                        <div class="coustom_show flex-col">
+                            
+                            {{#if feature_image}}
+                                <img  src="{{img_url feature_image}}">
+                            {{else}}
+                                <img  src="{{img_url feature_image}}">
+                            {{/if}}
+                            <span class="date">{{date format="DD MMMM YYYY"}}</span>
+                            <span class="title">{{title}}</span>
+                        </div>
+                        <div class="coustom_comment flex-col">
+                            <span class="author">{{authors}}</span>
+                            <span class="date">{{date format="DD MMMM YYYY"}}</span>
+                            <span class="ellipsis">{{excerpt}}</span>
+                            <p class="space-t"><a href="{{url}}">{{> icons/link-arrow}}</a></p>
+                        </div>
+
+                    </li>
+            {{/foreach}}
+        {{/get}}
+    </ul>
+</div>    
+
+</main>
+

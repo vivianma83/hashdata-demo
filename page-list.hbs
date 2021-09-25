@@ -1,0 +1,52 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} tag of the default.hbs template --}}
+
+{{> 'content-banner' parth_url=(asset "images/article.svg") description=(t "post_article_description") title=(t "post_article")}}
+
+<div class="inner">
+
+{{!--Search--}}
+
+
+<div class="inner">
+   <h6 class="center">博客文章</h6>
+   <h4 class="center">博客文章</h4>
+    {{> search}}
+</div>
+
+{{!--article list--}}
+
+{{#get "tags" limit="all" include="count.posts" filter="name:-'case'"}}
+        
+        <ul class="article-list-hearder flex-box-center">
+            {{#foreach tags}}
+                <li><a class="topic-more button-arrow button-arrow-right" href="{{url}}">{{name}}</a></li>
+            {{/foreach}}  
+        </ul>
+        <div class="flex-box-col">
+            {{#foreach tags}}
+                <div class="article-list">
+                        <h4>
+                            {{name}}
+                            {{!-- <div class="topic-count">
+                                {{plural count.posts empty="No articles" singular="1 article" plural="% articles"}}
+                            </div> --}}
+                        </h4>
+                        {{!-- <a class="topic-more button-arrow button-arrow-right" href="{{url}}">View All</a> --}}
+                        <ul>
+                            {{#get "posts" order="published_at asc" filter="tag:{{slug}}" limit="5" as |featured|}}
+                                <ul class="card4 flex-box-between">
+                                    {{#foreach featured}}
+                                        <li>
+                                            <p class="detail"><a class="topic-more button-arrow button-arrow-right" href="{{url}}">{{title}}</a></p>
+                                        </li>
+                                    {{/foreach}}
+                                </ul>
+                            {{/get}}
+                        </ul>
+                </div>
+            {{/foreach}}      
+        </div>
+{{/get}}
+</div>

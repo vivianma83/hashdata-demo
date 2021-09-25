@@ -1,0 +1,18 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+{{!-- The main content area --}}
+
+<main id="site-main" class="site-main outer">
+    {{!-- header 下面大广告位 --}}
+    
+    
+{{!-- 推荐购买 --}}
+{{#post}}
+{{> 'content-banner' parth_url=(asset "images/wearhouse.png") try_link='http://hashdata.cn/try'}}
+
+{{> 'product-common'}}
+
+</main>
+
+{{/post}}
