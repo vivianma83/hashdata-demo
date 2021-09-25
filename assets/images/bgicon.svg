@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="78px" viewBox="0 0 76 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bgicon</title>
+    <g id="网页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-325.000000, -994.000000)" fill="#EDF6FF">
+            <g id="bgicon-2" transform="translate(325.000000, 994.000000)">
+                <path d="M60.6521586,10.2317905 C42.6521586,-7.54863177 27.3200407,0.537677283 24.6521586,14.0838212 C21.9842765,27.6299652 -2.79876327,30.3346666 0.261187502,46.3346666 C3.32113827,62.3346666 36.6521586,52.8346666 36.6521586,67.3346666 C36.6521586,81.8346666 75.1895892,81.3346666 75.1895892,62.3346666 C75.1895892,43.3346666 78.6521586,28.0122127 60.6521586,10.2317905 Z" id="bgicon"></path>
+            </g>
+        </g>
+    </g>
+</svg>
