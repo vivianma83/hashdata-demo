@@ -75,6 +75,13 @@ You can add your own SVG icons in the same manner.
 - `page-product.hbs` - 产品介绍
 - `page-list.hbs` - 博客中心
 
+**Search功能:**
+```bash
+cd assets
+git clone https://github.com/jamalneufeld/ghostHunter.git --recursiv
+```
+参考[ghostHunter](https://github.com/jamwise/ghostHunter)
+
 
 # Copyright & License
 
