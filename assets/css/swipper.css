@@ -1,0 +1,33 @@
+.light-swiper {
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    padding: 10px 0;
+  }
+  
+  .swiper-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .swipe-item {
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+  .next,.prev{
+    position: absolute;
+    z-index: 2;
+  }
+
+  .prev{
+    left:0;
+    top: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .next{
+    right: -2rem;;
+    top: 50%;
+    transform: translate(-50%, 0);
+  }

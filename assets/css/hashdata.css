@@ -1,0 +1,1029 @@
+@import "global.css";
+@import "mdi.css";
+@import "screen.css";
+@import "case.css";
+@import "search.css";
+@import "swipper.css";
+body{
+    font-size: 0.75rem;
+    background: #fff;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+main{
+    margin: 3rem 0 0 0;
+}
+
+.font-blue-b{
+    font-size: 4rem;
+    font-weight: 200;
+    color: #459EFF;
+}
+
+
+h6{
+    font-size: 1.17rem;
+    color: #459EFF;
+}
+
+a.more, .blue_font{
+    font-size: 1.33rem;
+    font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+    font-weight: 500;
+    color: #459EFF;
+}
+
+h5{
+    font-size: 1.67rem;
+    color: #233D63;
+}
+
+h4{
+    font-size: 2.17rem;
+    color: #222A41;
+}
+
+.font-1{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #222A41;
+}
+
+p{
+    font-size: 1.17rem;
+}
+p.detail{
+    color: #6D7783;
+    line-height: 1.83rem;
+}
+
+p.detail2{
+    color: #233D63;
+    line-height: 1.83rem;
+}
+
+.flex-box{
+    display: flex;
+}
+
+.flex-box-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-box-between{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-col{
+    display: flex;
+    flex-flow: column;
+}
+
+.center{
+    text-align: center;
+}
+
+.m_b{
+    margin-bottom: 2.25rem;
+}
+
+.space-t-b{
+    margin-top: 2rem;
+    margin-bottom: 2rem
+}
+
+.space-t{
+    margin-top: 2rem;
+}
+
+.shandow-box{
+    background: #FFFFFF;
+    box-shadow: 0rem 0.17rem 0.67rem 0rem rgba(69, 158, 255, 0.1), 0rem 0.83rem 3.33rem 0rem rgba(69, 158, 255, 0.2);
+}
+
+.button-2{
+    width: 16.06rem;
+    height: 4.61rem;
+    background: #FFFFFF;
+    box-shadow: 0rem 0rem 0.83rem 0rem rgba(0, 0, 0, 0.2);
+    border-radius: 2.08rem;
+    border: 0.08rem solid #F2F2F2;
+    font-size: 1.33rem;
+    font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+    font-weight: 500;
+    color: #459EFF;
+    line-height: 4.61rem;
+}
+
+.button-3{
+    width: 16.06rem;
+    height: 4.61rem;
+    background: #FFFFFF;
+    border-radius: 2.08rem;
+    border: 0.08rem solid #B4B4B4;
+    color: #AEB7C1;;
+}
+
+.icon{
+    width:2.5rem;
+    height: 2.5rem;
+    color:#fff;
+}
+
+.icon2{
+    font-size: 2rem;
+    color: rgba(216, 216, 216, 1);
+}
+
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+/* particals - added by xiaojing
+/* ---------------------------------------------------------- */
+
+.content-banner{
+    display: flex;
+    flex-flow: row;
+    flex-grow: 1;
+}
+
+.content-banner .content_des{
+    width: 50%;
+    padding-left: 10rem;
+    padding-top: 10rem;
+}
+
+.content-banner p{
+    line-height: 2.17rem;
+}
+
+.content-banner .button-defalut{
+    margin: 3rem 0 0 0;
+    height: 4.17rem;
+    line-height: 4.17rem;
+}
+
+.content-banner  .content_img{
+    text-align: right;
+    width: 50%;
+    height: 30rem;
+    padding: 7rem;
+    background-image: url(../images/banngerbg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 100% 50%;
+}
+
+.content-banner  .content_img img{
+    display: inline;
+    width: 70%;
+}
+
+
+
+.button-defalut{
+    width: 9.63rem;
+    height: 2.5rem;
+    background: #459EFF;
+    border-radius: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    justify-content: center;
+    color:#fff;
+}
+
+.gh-head .button-defalut a,.button-defalut a{
+    color:#fff;
+}
+
+
+.icon-with-bg{
+    background-image: url(../images/bgicon.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 100%;
+    height: 5rem;
+    width: 5rem;
+    padding: 1rem 1.25rem 0.5rem 0.08rem;
+}
+
+
+/* particals - added by xiaojing
+/* ---------------------------------------------------------- */
+
+
+.customer-brand.outer{
+    margin-top: 3rem;
+    height: 10rem;
+    background: #F2F2F2;
+    padding: 0;
+}
+
+.customer-brand .inner{
+    height: 100%;;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.customer-brand .inner img{
+    align-self: center;
+}
+
+
+/* business intro 
+/* ---------------------------------------------------------- */
+
+.business-introduction{
+    padding: 8rem 0;
+}
+
+.business-introduction ul{
+    margin-top: 5rem;
+    justify-content: space-between;
+}
+
+.business-introduction ul li{
+    width: 19%;
+}
+
+
+
+/* HashData Warehouse 
+/* ---------------------------------------------------------- */
+
+
+.block_intro{
+    padding-top: 8.17rem;
+    width: 45.25rem;
+    margin-left: 9.42rem;
+}
+
+.block_img{
+    background-image: url(../images/banngerbg);
+    background-repeat: no-repeat;
+    padding-top: 8.17rem;
+    padding-bottom: 8.83rem;
+}
+
+.block_img img{
+    width: 51.83rem;
+    height: 31.67rem;
+}
+
+
+/* 我们的服务
+/* ---------------------------------------------------------- */
+.service{
+    text-align: center;
+    padding-top: 9.43rem;
+}
+
+.service h3{
+    margin-bottom: 9.83rem;
+    margin-top: 2.33rem;
+}
+
+.service ul li {
+    width: 30%;
+    height: 10rem;
+    text-align: center;
+}
+
+.service ul li span{
+    display: block;
+    padding-bottom: 2.242rem;
+}
+
+.service .shandow-box{
+    width: 100%;
+    height: 13.25rem;
+    padding: 4.5rem 5.5rem;
+    margin: 7.5rem auto;
+    justify-content: space-between;
+    color: #222A41;
+}
+
+.service .shandow-box .button-defalut{
+    width: 12.83rem;
+    height: 4.17rem; 
+    line-height: 4.17rem;   
+}
+
+.service .shandow-box p span{
+    display: block;
+    line-height: 3rem;
+    text-align: left;
+}
+
+
+
+/* 推荐购买
+/* ---------------------------------------------------------- */
+.recommended-purchase {
+    margin-top: 9rem;
+}
+.recommended-purchase .flex-box{
+    justify-content: space-between;
+    margin-top: 6.83rem;
+}
+
+.product-box{
+    width: 25.5rem;
+    background: #FFFFFF;
+    border: 0.08rem solid #AEB7C1;
+    padding: 2.17rem;
+    line-height: 1.42rem;
+}
+
+.product-box:hover{
+    box-shadow: 0rem 0.83rem 2.5rem 0rem rgba(69, 158, 255, 0.2);
+    border: 0.08rem solid #459EFF;
+}
+
+.product-box p, .product-box span{
+    margin-bottom: 1.75rem;
+}
+
+.product-box .font-blue-b{
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+.product-box .font-blue-b .sub-title{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #459EFF;
+    margin-left: 2rem;
+
+}
+
+.pricie{
+    font-weight: 400;
+    color: #222A41;
+    margin: 2rem auto;
+}
+
+.pricie .price_num{
+    font-size: 2.33rem;
+
+}
+
+.product-box .button-defalut{
+    width: 12.83rem;
+    height: 4.17rem;
+    line-height: 4.17rem;
+    margin: 2rem auto;
+}
+
+
+/* 咨询中心
+/* ---------------------------------------------------------- */
+.customer-recognition {
+    margin-bottom: 10rem;
+    padding: 9rem 0 0 0;
+}
+.customer-recognition ul{
+    justify-content: space-between;
+    margin-top: 7.9rem;
+}
+
+.customer-recognition ul li{
+    width: 29rem;
+    height: 27rem;
+    max-height: 35rem;
+}
+
+.customer-recognition ul li .coustom_show{
+    background: #FFFFFF;
+    border: 0.08rem solid #D8D8D8;
+    height: 100%;
+    line-height: 2.67rem;
+    overflow: hidden;
+}
+
+.customer-recognition ul li .coustom_show img{
+    height: 15rem;
+    overflow: hidden;
+}
+
+.customer-recognition ul li .coustom_show .date{
+    margin-top: 2.5rem;
+    padding: 0 4.25rem;
+    color: #6D7783 ;
+}
+
+.customer-recognition ul li .coustom_show .title{
+    padding: 0 4.25rem;
+    color: #459EFF ;
+}
+
+.customer-recognition ul li .coustom_comment{
+    background: #459EFF;
+    color: #fff;
+    font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.67rem;
+    padding: 4.25rem;
+    height: 100%;
+    display: none;
+}
+
+.customer-recognition ul li:hover .coustom_show{
+    display: none;
+}
+
+.customer-recognition ul li:hover .coustom_comment{
+    display: flex;
+}
+
+.coustom_comment .author{
+    font-size: 1.5rem;
+}
+
+.coustom_comment .date{
+    font-size: 1rem;
+
+}
+
+
+
+
+.post-message{
+    background: rgba(69, 158, 255, 0.2);
+    font-size: 1.67rem;
+    font-weight: 400;
+    color: #222A41;
+    line-height: 2.67rem;
+    margin-top: 10rem;
+    position:relative;
+}
+
+.post-message p {
+    padding: 11rem 0 19rem;
+}
+
+.p_circle{
+    position:absolute;
+    background: #B4B4B4;
+    box-shadow: 0rem 0.83rem 1.67rem 0rem rgba(49, 88, 114, 0.25);
+    border: 0.17rem solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.size_1{
+    width: 4rem; 
+    height: 4rem;
+}
+
+.size_2{
+    width: 4.75rem; 
+    height: 4.75rem;
+}
+
+.size_3{
+    width: 8.5rem; 
+    height: 8.5rem;
+}
+
+
+
+.anli ul.flex-box{
+    justify-content: space-between;
+}
+.anli ul li{
+    width: 24.83rem;
+    height:34.58rem;
+}
+
+.anli p{
+    text-align: right;
+    padding-right: 8rem;
+    margin-bottom: 3rem;
+    margin-top: -3rem;
+}
+
+
+
+
+
+
+
+/* 产品介绍 页面
+/* ---------------------------------------------------------- */
+
+.shandow-box-1{
+    background: #FFFFFF;
+    box-shadow: 0rem 0.67rem 1.67rem 0rem rgba(69, 158, 255, 0.2);
+}
+
+.product-card ul li{
+    padding: 5rem;
+    text-align: center;
+}
+
+.product-card .icon-with-bg{
+    margin: 0 auto;
+}
+
+.product-card h3{
+    margin-bottom: 10rem;
+}
+.product-intro{
+    padding: 5rem;
+    margin-bottom: 10rem;
+    background: rgba(69, 158, 255, .1);
+}
+
+.product-intro h6,.product-intro h3{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.product-intro ul{
+    margin: 10rem auto;
+    width: 80%;
+}
+
+
+.card3{
+    height: 17.58rem;
+    background: #FFFFFF;
+    box-shadow: 0rem 0.17rem 2.5rem 0rem rgba(69, 158, 255, 0.2);
+    border-radius: 1.5rem;
+    padding: 5rem;
+}
+
+.card3 h4{
+    margin: 0;
+    color: #459eff;
+    font-weight: 200;
+    margin-bottom: 2.83rem;
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+
+/* 资源中心列表页
+/* ---------------------------------------------------------- */
+.article-list-hearder{
+    margin: 5rem 0;
+    padding: 2rem;
+}
+
+.article-list-hearder li.active{
+    color: #459eff;
+}
+
+.article-list-hearder li{
+   width: 10%;
+   text-align: center;
+   cursor: pointer;
+}
+
+.article-list{
+    margin: 5rem 0;
+    border-bottom: #D3D3D3 1px dashed;
+    padding: 2rem;
+}
+
+.article-list:hover, .article-list.active{
+    box-shadow: 0rem 0.5rem 1rem 0rem #D3D3D3;
+    border-bottom:solid 1px #D3D3D3;
+}
+
+
+
+/* page wearhouse
+/* ---------------------------------------------------------- */
+.sale_price{
+    height: 2rem;
+    padding: 0 2rem;
+    line-height: 2rem;
+    color:#459EFF ;
+    border: 0.08rem solid #459EFF;
+}
+
+.box-bottom-boder{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #AEB7C1;;
+}
+
+.recommended-purchase .button-3{
+    margin: 0 auto;
+}
+
+.recommended-purchase .product-box:hover .button-3{
+    background: #459EFF;
+    color:#fff;
+    border: 1px solid #459EFF;
+}
+
+.outerbg{
+    background: rgba(69,158,255,.1);
+    padding: 10rem 5rem;
+    margin: 10.25rem 0;
+}
+.product-advantages,.product-card-2,.help-dom{
+    margin: 10.25rem 0;
+    padding: 10rem 5rem;
+    background: rgba(69,158,255,.1);
+}
+
+.product-advantages ul{
+    margin-top: 10rem;
+}
+
+
+.product-advantages ul li{
+    width: 40%;
+    margin-bottom: 5rem;
+}
+
+.product-advantages ul li .content{
+    width: 80%;
+}
+
+.product-advantages h5{
+       margin: 0 0 2rem 0;
+}
+
+
+.product-advantages .detail{
+    line-height: 2rem;
+}
+
+.circle_img{
+    width: 8rem;
+    height: 8rem;
+    background: #FFFFFF;
+    box-shadow: 0rem 0rem 0.83rem 0rem rgba(69, 158, 255, 0.2);
+    border: 0.08rem solid #459EFF;
+    border-radius: 50%;
+}
+.align-2-center{
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.align-2-center li{
+    width: 35%;
+}
+.product-card-2 ul{
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.product-card-2 ul li{
+    width: 30%;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    padding: 0 0 3rem 0;
+}
+.product-card-2,.help-dom{
+    margin-bottom: 0;
+}
+
+.icon-3{
+    text-align: right;
+    display: block;
+}
+
+.icon-3 span{
+    text-align: center;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 1rem solid transparent;
+    border-left: 2rem solid #459EFF;
+    border-bottom: 1rem solid transparent;
+}
+.help-dom ul{
+    margin-top: 5rem;
+}
+.help-dom ul li{
+    width: 20%;
+    background: #fff;
+    padding: 3rem;
+    overflow: hidden;
+}
+
+
+
+
+/* about-us
+/* ---------------------------------------------------------- */
+.about-us{
+    margin-top: 5rem;
+}
+.about-us .img-box, .about-us .content{
+    padding: 5rem;
+}
+
+.about-us .content h1{
+    font-size: 2.17rem;
+    font-weight: 400;
+    color: #222A41;
+    line-height: 2.83rem;
+    margin-bottom: 4.42rem;
+    margin-top: 10rem;
+}
+
+.about-us .content p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #222A41;
+    line-height: 2.25rem;
+}
+
+.cooperation-project .button-2{
+    margin-top: 5rem;
+}
+
+.cooperation-project .project-item{
+    width: 30%;
+}
+
+.project-item a{
+    display: block;
+}
+
+.circle_img_2{
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid #333;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.circle_img_2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.awards ul{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.awards ul li{
+    width: 25%;
+    margin-bottom: 5rem;
+}
+
+.awards ul::after{
+    content: "";
+    width: 25%;
+}
+
+
+
+.form-contact{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.form-input{
+    width: 27.09rem;
+    height: 3.57rem;
+    line-height:3.57rem;
+    background: #FFFFFF;
+    border: 0.08rem solid #D8D8D8;
+    padding: 0 2rem;
+}
+
+.form-text{
+    padding: 2rem;
+    width: 54.5rem;
+    height: 12.33rem;
+    background: #FFFFFF;
+    border: 0.08rem solid #D8D8D8;
+}
+
+.space-t-b{
+    margin-top: 2rem;
+    margin-bottom: 2rem
+}
+.costom-comment .list{
+    position: relative;
+    width: 50%;
+    height: 20rem;
+    margin: 2rem auto;
+}
+.costom-comment .light-swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.light-swiper .swipe-item{
+    padding: 3rem;
+}
+.avatar{
+    width: 5rem;
+    height: 5rem;
+    background: #B4B4B4;
+    box-shadow: 0rem 1.67rem 3.33rem 0rem rgba(49, 88, 114, 0.25);
+    border: 0.17rem solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.light-swiper .swipe-item .avatar{
+    margin-right: 2rem;
+}
+.coustom-info{
+    align-items:center;
+    line-height: 2rem;
+}
+
+.post-card-image-link{
+    display: none;
+}
+
+
+
+
+.article{
+    position: relative;
+    min-height: 60rem;
+}
+
+.article .flow-info{
+    top: 10%;
+    right:0;
+    width: 20%;
+    height: 30rem;
+    position: absolute;
+    text-align: left;
+    color: #222A41;
+    display: none;
+}
+
+.article .flow-info .item{
+    margin: 4.5rem 0;
+}
+
+.article .flow-info .item h5{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #222A41;
+    line-height: 2.25rem;
+}
+
+.article .flow-info .item p{
+    font-size: 1.17rem;
+    font-weight: 400;
+    color: #6D7783;
+    line-height: 2rem;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .content-banner .content_img{
+        display: none;
+    }
+
+    .content-banner .content_des{
+       width: 100%;
+       padding-left:0;
+       text-align: center;
+    }
+
+    .content-banner .button-defalut{
+        margin: 3rem auto;
+    }
+
+    .customer-brand{
+        display: none;
+    }
+
+    .icon-with-bg{
+        margin: 0 auto;
+    }
+
+    h5,h4,h3,h6{
+        text-align: center;
+    }
+
+    .flex-box,.flex-box-center {
+       flex-flow: column;
+    }
+    .flex-box ul,.flex-box ul{
+        width: 100%;
+     }
+
+     .service .flex-box-center{
+        flex-flow: row;
+     }
+     .business-introduction ul li{
+        width: 100%;
+    }
+
+    .service .shandow-box{
+        width: 100%;
+        margin: 0rem 0 5rem;
+        justify-content:center
+    }
+
+    .block_intro{
+        padding: 0;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .anli ul li{
+        width: 100%;
+        margin-bottom: 8rem;
+        text-align: center;
+    }
+
+    .anli ul li img{
+        display: inline;
+    }
+
+    .product-box,.customer-recognition ul li{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .anli p{
+        text-align: right;
+        padding-right: 1rem;
+        margin-bottom: 3rem;
+        margin-top: -3rem;
+    }
+
+
+
+    .product-intro ul,.product-card-2 ul{
+        width: 100%;
+    }
+
+    .product-card-2 ul li,.help-dom ul li,.product-advantages ul li,.awards ul li,.costom-comment .list {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .awards ul li{
+        text-align: center;
+    }
+    .card3{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+  
+
+    .card2 li{
+        width: 100%;
+    }
+
+
+    .circle_img{
+        width: 0;
+    }
+
+    .article-list-hearder li{
+        width: 100%;
+        margin: 1rem;
+    }
+
+    .search{
+        width: 80%;
+    }
+
+    .costom-comment .list{
+        height: 100%;
+    }
+
+}
+
+.gh-portal-triggerbtn-wrapper{
+    display:none;
+}
